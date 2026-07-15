@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CodeVolt — Web &amp; Software Studio</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<div class="mobile-bar">
+  <div class="side-logo"><img src="assets/logo.png" alt="Studio emblem"></div>
+  <button class="mobile-menu-btn">MENU</button>
+</div>
+<nav class="mobile-nav">
+  <a href="index.html" class="active">00 · Home</a>
+  <a href="websites.html">01 · Websites</a>
+  <a href="systems.html">02 · Systems</a>
+  <a href="retainers.html">03 · Care Plans</a>
+  <a href="showcase.html">04 · Showcase</a>
+  <a href="contact.html">05 · Start a Project</a>
+</nav>
+
+<div class="shell">
+  <aside class="sidebar">
+    <div class="side-logo">
+      <img src="assets/logo.png" alt="Studio emblem">
+      <div class="wordmark"><strong>CodeVolt</strong>Web &amp; Software</div>
+    </div>
+    <nav class="side-nav">
+      <a href="index.html" class="active"><span class="idx">00</span> Home</a>
+      <a href="websites.html"><span class="idx">01</span> Websites</a>
+      <a href="systems.html"><span class="idx">02</span> Systems</a>
+      <a href="retainers.html"><span class="idx">03</span> Care Plans</a>
+      <a href="showcase.html"><span class="idx">04</span> Showcase</a>
+      <a href="contact.html"><span class="idx">05</span> Start a Project</a>
+    </nav>
+    <div class="side-foot">
+      <a href="contact.html" class="btn btn-solid">Request a Site</a>
+      <div class="loc">WINDHOEK, NAMIBIA</div>
+    </div>
+  </aside>
+
+  <main>
+    <section class="hero">
+      <img src="assets/logo-full.png" alt="CodeVolt" class="logo-full-hero">
+      <span class="kicker">Independent Web &amp; Software Studio</span>
+      <h1>Websites and systems, <span class="accent">built to spec</span> — not off a shelf.</h1>
+      <p class="lead">One person, start to finish: design, build, and long-term care for websites, booking systems, dashboards, and online stores — for businesses across Namibia.</p>
+      <div class="hero-ctas">
+        <a href="contact.html" class="btn btn-solid">Request Your Site →</a>
+        <a href="websites.html" class="btn">See Pricing</a>
+      </div>
+    </section>
+
+    <section class="content-block reveal">
+      <div class="cat-head flush-top">
+        <span class="num">—</span><h2>What I build</h2><div class="rule"></div>
+      </div>
+      <div class="overview-grid">
+        <div class="overview-card bracket-panel">
+          <span class="bl"></span><span class="br"></span>
+          <span class="idx">01</span>
+          <h3>Websites</h3>
+          <p>From a single landing page to a fully custom multi-page site with its own CMS. Every build is responsive, fast, and easy for you to update.</p>
+          <a href="websites.html" class="go">View website pricing</a>
+        </div>
+        <div class="overview-card bracket-panel">
+          <span class="bl"></span><span class="br"></span>
+          <span class="idx">02</span>
+          <h3>Systems &amp; Stores</h3>
+          <p>Logins, dashboards, booking and scheduling tools, and online stores — for businesses that need their website to actually do something.</p>
+          <a href="systems.html" class="go">View systems pricing</a>
+        </div>
+        <div class="overview-card bracket-panel">
+          <span class="bl"></span><span class="br"></span>
+          <span class="idx">03</span>
+          <h3>Ongoing Care</h3>
+          <p>Monthly retainer plans that keep your site backed up, updated, secure, and lightly maintained — so it doesn't just sit there and rot.</p>
+          <a href="retainers.html" class="go">View care plans</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-block tight reveal">
+      <div class="cat-head">
+        <span class="num">—</span><h2>Already in the field</h2><div class="rule"></div>
+      </div>
+      <div class="bracket-panel mini-feature">
+        <span class="bl"></span><span class="br"></span>
+        <div>
+          <h3 class="mini-feature-title">A program already built and running</h3>
+          <p class="mini-feature-copy">See a real demo, plus a breakdown of what it does and how it's built.</p>
+        </div>
+        <a href="showcase.html" class="btn">Watch the Demo →</a>
+      </div>
+    </section>
+
+    <footer class="page-footer">
+      <span>© <span id="year"></span> CodeVolt. Windhoek, Namibia.</span>
+      <span><a href="contact.html">Get in Touch →</a></span>
+    </footer>
+  </main>
+</div>
+
+<script src="assets/script.js"></script>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
