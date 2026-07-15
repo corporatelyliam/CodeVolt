@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Showcase — CodeVolt</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<div class="mobile-bar">
+  <div class="side-logo"><img src="assets/logo.png" alt="Studio emblem"></div>
+  <button class="mobile-menu-btn">MENU</button>
+</div>
+<nav class="mobile-nav">
+  <a href="index.html">00 · Home</a>
+  <a href="websites.html">01 · Websites</a>
+  <a href="systems.html">02 · Systems</a>
+  <a href="retainers.html">03 · Care Plans</a>
+  <a href="showcase.html" class="active">04 · Showcase</a>
+  <a href="contact.html">05 · Start a Project</a>
+</nav>
+
+<div class="shell">
+  <aside class="sidebar">
+    <div class="side-logo">
+      <img src="assets/logo.png" alt="Studio emblem">
+      <div class="wordmark"><strong>CodeVolt</strong>Web &amp; Software</div>
+    </div>
+    <nav class="side-nav">
+      <a href="index.html"><span class="idx">00</span> Home</a>
+      <a href="websites.html"><span class="idx">01</span> Websites</a>
+      <a href="systems.html"><span class="idx">02</span> Systems</a>
+      <a href="retainers.html"><span class="idx">03</span> Care Plans</a>
+      <a href="showcase.html" class="active"><span class="idx">04</span> Showcase</a>
+      <a href="contact.html"><span class="idx">05</span> Start a Project</a>
+    </nav>
+    <div class="side-foot">
+      <a href="contact.html" class="btn btn-solid">Request a Site</a>
+      <div class="loc">WINDHOEK, NAMIBIA</div>
+    </div>
+  </aside>
+
+  <main>
+    <div class="page-header">
+      <span class="crumb">04 / In the Field</span>
+      <h1>Something already built and running.</h1>
+      <p class="lead">A real program, not a mockup — see how it works and what it's built on.</p>
+    </div>
+
+    <section class="content-block reveal">
+      <div class="showcase-wrap">
+        <div class="showcase-media bracket-panel">
+          <span class="bl"></span><span class="br"></span>
+          <!--
+            Replace this placeholder div with your own media, e.g.:
+            <video src="assets/demo.mp4" autoplay muted loop playsinline></video>
+            or
+            <img src="assets/demo.gif" alt="Program demo">
+          -->
+          <div class="placeholder">
+            <span class="big">▶</span>
+            Drop your demo video or GIF here<br>
+            (replace this block in showcase.html with a &lt;video&gt; or &lt;img&gt; tag)
+          </div>
+        </div>
+        <div class="showcase-text">
+          <h3>BRPLL — Pool League Manager</h3>
+          <p>A full league-management platform built for a pool lounge: player and account management, tournaments (round-robin and knockout), multi-season leagues with automatic promotion/relegation, division championships, and singles/doubles team leagues — all reflected on a live leaderboard the moment a score is entered.</p>
+          <p>Up to three admins can score games from separate devices at the same time without conflicts, thanks to atomic score updates and a real-time sync layer — changes appear on every connected screen instantly. Players get their own login to check standings, upcoming fixtures, and career stats, while admins get full control over accounts, branding, and dashboard announcements.</p>
+          <div class="stack-tags">
+            <span>React 18 + Vite</span>
+            <span>Node.js + Express</span>
+            <span>SQLite (better-sqlite3)</span>
+            <span>Docker</span>
+            <span>Cloudflare Tunnel</span>
+            <span>Server-Sent Events</span>
+          </div>
+          <div class="showcase-cta">
+            <a href="contact.html" class="btn btn-solid">Build Something Like This →</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="bracket-panel reveal value-panel">
+        <span class="bl"></span><span class="br"></span>
+        <div class="cat-head flush-top">
+          <span class="num">—</span><h2>What a system like this is worth</h2><div class="rule"></div>
+        </div>
+        <p class="value-desc">
+          This isn't a single feature — it's several systems working together. Priced against the tiers on the
+          <a href="systems.html">Systems &amp; Stores</a> page,
+          here's roughly how the build breaks down:
+        </p>
+        <div class="tier-grid value-grid">
+          <div>
+            <ul class="value-list">
+              <li><span>Accounts, roles &amp; admin dashboard</span><span class="mono">~N$25,000</span></li>
+              <li><span>Tournament engine &amp; scoring logic</span><span class="mono">~N$20,000</span></li>
+              <li><span>Seasons, divisions &amp; championships</span><span class="mono">~N$30,000</span></li>
+              <li><span>Team leagues (singles &amp; doubles)</span><span class="mono">~N$15,000</span></li>
+            </ul>
+          </div>
+          <div>
+            <ul class="value-list">
+              <li><span>Real-time multi-admin sync</span><span class="mono">~N$10,000</span></li>
+              <li><span>Player self-service portal</span><span class="mono">~N$12,000</span></li>
+              <li><span>Exports, uploads &amp; bulletins</span><span class="mono">~N$8,000</span></li>
+              <li><span>Dockerized deployment &amp; hosting setup</span><span class="mono">~N$5,000</span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="value-total">
+          <span class="display value-total-label">Estimated build value</span>
+          <span class="mono value-total-amount">N$110,000 – N$150,000</span>
+        </div>
+        <p class="value-footnote">Figures are a scope-based estimate, not a fixed quote — final pricing depends on the specifics of your project.</p>
+      </div>
+    </section>
+
+    <footer class="page-footer">
+      <span>© <span id="year"></span> CodeVolt. Windhoek, Namibia.</span>
+      <span><a href="contact.html">Get in Touch →</a></span>
+    </footer>
+  </main>
+</div>
+
+<script src="assets/script.js"></script>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
